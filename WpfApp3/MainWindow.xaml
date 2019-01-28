@@ -7,6 +7,16 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="1" VerticalAlignment="Center">
+            <TextBlock x:Name="title" Text="Receiver" Height="30" HorizontalAlignment="Center" />
+            <Button x:Name="buttonStart"  Width="100" Height="30" Content="Start" Click="ButtonClickStart" />
+            <TextBlock x:Name="textBlock" Text="0" Height="20" HorizontalAlignment="Center"  />
+            <Button x:Name="buttonStop"  Width="100" Height="30" Content="Stop" Click="ButtonClickStop" />
+        </StackPanel>
     </Grid>
 </Window>
